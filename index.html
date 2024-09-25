@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jogos Online</title>
+
+    <!-- Inclusão do script UserWay para acessibilidade -->
+    <script>
+        (function(d){
+            var s = d.createElement("script");
+            s.setAttribute("data-account", "INSIRA_SEU_CÓDIGO_USERWAY_AQUI");
+            s.setAttribute("src", "https://cdn.userway.org/widget.js");
+            (d.body || d.head).appendChild(s);
+        })(document);
+    </script>
+
+    <!-- Estilos embutidos com interatividade e responsividade -->
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: Arial, sans-serif;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p3/5217222-jogo-fundo-azul-e-roxo-com-elemento-vetor.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Estilo da barra de navegação */
+        .navbar {
+            background: rgba(48, 25, 52, 0.9); /* Roxo mais escuro */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        /* Estilo da seção de jogos */
+        .jogos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 0;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .jogo {
+            background: linear-gradient(135deg, rgba(48, 25, 52, 0.9), rgba(0, 0, 0, 0.8)); /* Gradiente entre roxo escuro e preto */
+            border: none;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            width: 350px; /* Aumentado */
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .jogo:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .jogo img {
+            max-width: 90%; /* Aumentado */
+            height: auto;
+            margin-bottom: 20px; /* Aumentado */
+        }
+
+        .jogo h3 {
+            font-size: 1.8em; /* Aumentado */
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .jogo p {
+            font-size: 1.2em; /* Aumentado */
+            margin-bottom: 20px;
+            color: #ddd;
+        }
+
+        button {
+            background-color: #000000;
+            color: white;
+            padding: 12px 20px; /* Aumentado */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em; /* Aumentado */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: rgba(48, 25, 52, 0.9);
+            transform: scale(1.1);
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: rgba(48, 25, 52, 0.9); /* Roxo mais escuro */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        /* Botão de acessibilidade */
+        .userway-button {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .jogos {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .jogo {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Jogos PS5</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="jogos">
+            <div class="jogo">
+                <img src="https://m.media-amazon.com/images/I/81KoGd-98cL._AC_UL320_.jpg" alt="Imagem do Jogo 1">
+                <h3>The Last of Us: </h3>
+                <p>Sobrevivência, amor e luta em um mundo pós-apocalíptico devastado e emocionante.<br><p>R$269,10</p>
+                <a href="https://www.amazon.com.br/Last-Us-Part-PlayStation/dp/B0B3YF2NZD/ref=sr_1_3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=290MW3AJG120R&dib=eyJ2IjoiMSJ9.hAYwiedhJG4zOh2WREfRfufj_xN6NwvzKcUKvCxVqFqv2TeZdK_Ptl0H3SulQ7JFog7OJ-ri4aIMhF3AhjwmR0MFzMzF5ZN3zktq4QnrTqmyjScbwJAjmU7b4KBwf5iye4CGUM-HMuY1FNkuAuTHlAxdFPlXGcWN2OZJoxfHvHBD3aRqrIgJmC2CE-pNuHpm5xRuJHEyrylZuBR9IYciyjApSBxJEFvfHSwVZLdmiZPeL4EvbSWJ8ghhHLdBZx5R1cXZJDEitojlxGn6tURyRe-E4933dxKeWB4-37QvC_A.5ExhWzqstJof6ckMvPUXGO_iNuoTk2Lhb2wNTUfrJHo&dib_tag=se&keywords=jogos+ps5&qid=1727274415&sprefix=jogos+ps%2Caps%2C237&sr=8-3&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12"><button>Comprar</button></a>
+            </div>
+
+            <div class="jogo">
+                <img src="https://m.media-amazon.com/images/I/718md8Ry+IL._AC_UL320_.jpg" alt="Imagem do Jogo 2">
+                <h3>GTA: </h3>
+                <p>Liberdade total em um mundo aberto, repleto de crime, caos e aventuras.<br><p>R$269,10</p>
+                <a href="https://www.amazon.com.br/TAKE-TWO-GTA-V/dp/B0B12DV64Y/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=290MW3AJG120R&dib=eyJ2IjoiMSJ9.hAYwiedhJG4zOh2WREfRfufj_xN6NwvzKcUKvCxVqFqv2TeZdK_Ptl0H3SulQ7JFog7OJ-ri4aIMhF3AhjwmR0MFzMzF5ZN3zktq4QnrTqmyjScbwJAjmU7b4KBwf5iye4CGUM-HMuY1FNkuAuTHlAxdFPlXGcWN2OZJoxfHvHBD3aRqrIgJmC2CE-pNuHpm5xRuJHEyrylZuBR9IYciyjApSBxJEFvfHSwVZLdmiZPeL4EvbSWJ8ghhHLdBZx5R1cXZJDEitojlxGn6tURyRe-E4933dxKeWB4-37QvC_A.5ExhWzqstJof6ckMvPUXGO_iNuoTk2Lhb2wNTUfrJHo&dib_tag=se&keywords=jogos+ps5&qid=1727274415&sprefix=jogos+ps%2Caps%2C237&sr=8-1"><button>Comprar</button></a>
+            </div>
+
+            <div class="jogo">
+                <img src="https://m.media-amazon.com/images/I/8136lnf0n2L._AC_UL320_.jpg" alt="Imagem do Jogo 3">
+                <h3>God of War: </h3>
+                <p> Aventura épica de Kratos e Atreus enfrentando deuses nórdicos em combates intensos.<br><p>R$269,10</p>
+                <a href="https://www.amazon.com.br/God-War-Ragnar%C3%B6k-Standard-PlayStation/dp/B0BH59HP23/ref=sr_1_12?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=290MW3AJG120R&dib=eyJ2IjoiMSJ9.hAYwiedhJG4zOh2WREfRfufj_xN6NwvzKcUKvCxVqFqv2TeZdK_Ptl0H3SulQ7JFog7OJ-ri4aIMhF3AhjwmR0MFzMzF5ZN3zktq4QnrTqmyjScbwJAjmU7b4KBwf5iye4CGUM-HMuY1FNkuAuTHlAxdFPlXGcWN2OZJoxfHvHBD3aRqrIgJmC2CE-pNuHpm5xRuJHEyrylZuBR9IYciyjApSBxJEFvfHSwVZLdmiZPeL4EvbSWJ8ghhHLdBZx5R1cXZJDEitojlxGn6tURyRe-E4933dxKeWB4-37QvC_A.5ExhWzqstJof6ckMvPUXGO_iNuoTk2Lhb2wNTUfrJHo&dib_tag=se&keywords=jogos+ps5&qid=1727274415&sprefix=jogos+ps%2Caps%2C237&sr=8-12&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12"><button>Comprar</button></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por: Mariana Alice</p>
+    </footer>
+
+    <!-- Botão de acessibilidade -->
+    <div class="userway-button">
+        <script>
+            (function(d){
+                var s = d.createElement("script");
+                s.setAttribute("data-account", "INSIRA_SEU_CÓDIGO_USERWAY_AQUI");
+                s.setAttribute("src", "https://cdn.userway.org/widget.js");
+                (d.body || d.head).appendChild(s);
+            })(document);
+        </script>
+    </div>
+</body>
+</html>
